@@ -3,6 +3,7 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 **重要：永远使用中文回复用户。**
+**输出报告/文件时，只生成用户明确要求的格式，不要额外生成 PDF 或其他格式。**
 
 ## What this project is
 
@@ -34,7 +35,7 @@ Custom agents are defined as markdown files in `.claude/agents/` and surfaced to
 
 ## Hooks
 
-A **Stop hook** is configured in `.claude/settings.json` to run `.claude/hooks/stop-check.py` on every session stop. This hook:
+A **Stop hook** is configured in `.claude/settings.json` to run `.claude/hooks/stop-check.js` on every session stop. This hook:
 - Scans the transcript for file modifications (Edit/Write tool calls)
 - Checks for verification evidence (test runs, lint checks, type checks, or explicit verification statements)
 - **Blocks session stop** if files were modified but no verification was detected
