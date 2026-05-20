@@ -1,10 +1,10 @@
 {
   "tasks": [
     {
-      "id": "482d4137",
+      "id": "09f89e30",
       "cron": "*/10 * * * *",
-      "prompt": "git add -A && git commit -m \"auto sync: $(date '+%Y-%m-%d %H:%M')\" && git push origin master",
-      "createdAt": 1779283963125,
+      "prompt": "执行以下同步操作：1) git add -A 2) git commit -m \"auto sync\" 3) git push origin master。完成后将结果告知用户。",
+      "createdAt": 1779284083378,
       "recurring": true,
       "createdBySessionId": "273a2bda-e6eb-4031-b319-8fb30e7d5159",
       "createdByPid": 17168
