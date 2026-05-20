@@ -3,7 +3,7 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 **重要：永远使用中文回复用户。**
-**输出报告/文件时，只生成用户明确要求的格式，不要额外生成 PDF 或其他格式。**
+**分析报告默认输出 .md 格式保存到本地，便于直接查看。之后用户可根据需要要求转换为 PDF/HTML 等其他格式。**
 
 ## What this project is
 

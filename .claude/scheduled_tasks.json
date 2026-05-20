@@ -1,0 +1,13 @@
+{
+  "tasks": [
+    {
+      "id": "482d4137",
+      "cron": "*/10 * * * *",
+      "prompt": "git add -A && git commit -m \"auto sync: $(date '+%Y-%m-%d %H:%M')\" && git push origin master",
+      "createdAt": 1779283963125,
+      "recurring": true,
+      "createdBySessionId": "273a2bda-e6eb-4031-b319-8fb30e7d5159",
+      "createdByPid": 17168
+    }
+  ]
+}
