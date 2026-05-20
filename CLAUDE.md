@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+**重要：永远使用中文回复用户。**
+
 ## What this project is
 
 This is a **Claude Code skills workspace** — not a traditional software project. It's a local sandbox for learning and configuring Claude Code's extensibility features: skills, custom agents, and hooks. There is no application code, build system, or test suite here.
