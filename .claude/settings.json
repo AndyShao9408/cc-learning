@@ -7,6 +7,10 @@
           {
             "type": "command",
             "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/hooks/stop-check.js\""
+          },
+          {
+            "type": "command",
+            "command": "node -e \"const{execSync}=require('child_process');const d=process.env.CLAUDE_PROJECT_DIR;const s=execSync('git status --porcelain',{cwd:d}).toString().trim();const l=execSync('git log origin/master..HEAD --oneline',{cwd:d}).toString().trim();if(s||l){console.log('\\n' + '='.repeat(56));console.log('  ⚠ Git 推送提醒');console.log('='.repeat(56));if(s)console.log('\\n  本地有未提交的更改，请记得提交并推送。');if(l)console.log('\\n  本地有未推送的提交：\\n' + l.split(/\\r?\\n/).map(x=>'    · '+x).join('\\n'));console.log('\\n  建议执行: git add -A && git commit -m \\\"msg\\\" && git push');console.log('='.repeat(56)+'\\n')}process.exit(0)\""
           }
         ]
       }
