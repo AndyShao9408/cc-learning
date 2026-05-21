@@ -4,6 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **重要：永远使用中文回复用户。**
 **分析报告默认输出 .md 格式保存到本地，便于直接查看。之后用户可根据需要要求转换为 PDF/HTML 等其他格式。**
+**生成自选股列表时，须包含：名称、代码、类型（沪A/深A/创业板等）、板块、最新收盘价、当日涨跌幅。**
 
 ## What this project is
 
